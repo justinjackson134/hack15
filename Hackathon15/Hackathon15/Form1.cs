@@ -16,5 +16,24 @@ namespace Hackathon15
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Validate credentials
+            // if valid, open main program window
+            Form1 f1 = new Form1(); // Instantiate a Form3 object.
+            f1.Show(); // Show Form3 and
+            //this.Close();
+        }
     }
 }
