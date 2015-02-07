@@ -33,12 +33,17 @@ namespace Hackathon15
             // if valid, open main program window
             Form2 f1 = new Form2(); // Instantiate a Form3 object.
             f1.Show(); // Show Form3 and
-            //this.Close();
+            //this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show(textBox1.Text);
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
