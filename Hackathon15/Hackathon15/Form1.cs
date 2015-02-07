@@ -35,5 +35,10 @@ namespace Hackathon15
             f1.Show(); // Show Form3 and
             //this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(textBox1.Text);
+        }
     }
 }
