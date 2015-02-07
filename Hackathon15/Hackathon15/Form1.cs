@@ -31,7 +31,7 @@ namespace Hackathon15
         {
             // Validate credentials
             // if valid, open main program window
-            Form1 f1 = new Form1(); // Instantiate a Form3 object.
+            Form2 f1 = new Form2(); // Instantiate a Form3 object.
             f1.Show(); // Show Form3 and
             //this.Close();
         }
