@@ -31,6 +31,7 @@ namespace Hackathon15
         private void button2_Click(object sender, EventArgs e)
         {
             // Validate credentials
+            
             // if valid, open main program window
             Form2 f1 = new Form2(); // Instantiate a Form3 object.
             f1.Show(); // Show Form3 and
@@ -39,7 +40,9 @@ namespace Hackathon15
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(textBox1.Text);
+            string[] login = {(textBox1.Text), (textBox2.Text)};
+            System.IO.File.WriteAllLines(@"C:\Users\Public\WriteLines.txt", login);
+            button2_Click(button1, null);
         }
     }
 }
