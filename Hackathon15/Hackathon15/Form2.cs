@@ -15,6 +15,7 @@ namespace Hackathon15
         public Form2()
         {
             InitializeComponent();
+            label1.Text = monthCalendar1.SelectionStart.ToShortDateString();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -23,6 +24,11 @@ namespace Hackathon15
         }
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            MessageBox.Show("date changed: " + monthCalendar1.SelectionStart.ToShortDateString());
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
         {
 
         }
