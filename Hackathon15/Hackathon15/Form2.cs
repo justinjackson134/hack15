@@ -25,12 +25,52 @@ namespace Hackathon15
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
-            MessageBox.Show("date changed: " + monthCalendar1.SelectionStart.ToShortDateString());
+            label1.Text = monthCalendar1.SelectionStart.ToShortDateString();
         }
 
         private void label1_Click_1(object sender, EventArgs e)
         {
+            // Curr date label
+        }
 
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            // Calories Consumed Box
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            // Calories burned box
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            // add calories box
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            // add calories button
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            // minutes of activity box
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            // + 5 min button
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            // + 30 min button
         }
     }
 }
