@@ -70,7 +70,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(227, 23);
             this.button2.TabIndex = 3;
-            this.button2.Text = "button2";
+            this.button2.Text = "BMI calculator";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -89,8 +89,9 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(311, 23);
             this.button4.TabIndex = 5;
-            this.button4.Text = "Save and Exit";
+            this.button4.Text = "Save";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label1
             // 
@@ -173,7 +174,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(150, 23);
             this.button7.TabIndex = 15;
-            this.button7.Text = "+30";
+            this.button7.Text = "-5";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
