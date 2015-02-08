@@ -16,5 +16,19 @@ namespace Hackathon15
         {
             InitializeComponent();
         }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.chart1.Series["WEIGHT"].Points.AddXY(1, 250);
+            this.chart1.Series["WEIGHT"].Points.AddXY(2, 245);
+            this.chart1.Series["WEIGHT"].Points.AddXY(3, 242);
+            this.chart1.Series["WEIGHT"].Points.AddXY(4, 234);
+            this.chart1.Series["WEIGHT"].Points.AddXY(5, 235);
+        }
     }
 }
