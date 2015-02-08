@@ -47,7 +47,7 @@ namespace Hackathon15
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
+            textBox2.PasswordChar = '*';
         }
     }
 }
