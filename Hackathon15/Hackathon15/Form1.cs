@@ -30,16 +30,26 @@ namespace Hackathon15
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //go
             // Validate credentials
+            string[] lines = System.IO.File.ReadAllLines(@"C:\Users\Public\WriteLines.txt");
             
-            // if valid, open main program window
-            Form2 f1 = new Form2(); // Instantiate a Form3 object.
-            f1.Show(); // Show Form3 and
-            //this.Hide();
+            if ((String.Equals(lines[0], textBox1.Text) && (String.Equals(lines[1], textBox2.Text))))
+            {
+                // if valid, open main program window
+                Form2 f1 = new Form2(); // Instantiate a Form3 object.
+                f1.Show(); // Show Form3 and
+                //this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Invalid information");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //create
             string[] login = {(textBox1.Text), (textBox2.Text)};
             System.IO.File.WriteAllLines(@"C:\Users\Public\WriteLines.txt", login);
             button2_Click(button1, null);
@@ -47,7 +57,7 @@ namespace Hackathon15
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
