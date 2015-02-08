@@ -30,7 +30,9 @@ namespace Hackathon15
             int i = -1;
             int myInt = 1;
 
+
             i = dates.IndexOf(monthCalendar1.SelectionStart.ToShortDateString());
+
             if (i != -1)
             {
                 // date exists in list
@@ -50,9 +52,8 @@ namespace Hackathon15
             }
 
             // calculate_burn
-            myInt = System.Convert.ToInt32(cal_burn[i]);
+            myInt = System.Convert.ToInt32(min_active[i]);
             cal_burn[i] = ((double)myInt * .55 * /*weight*/ 1).ToString();
-            MessageBox.Show("" + cal_burn[i]);
 
             label1.Text = monthCalendar1.SelectionStart.ToShortDateString();
             textBox1.Text = (string)cal_in[i];
@@ -68,6 +69,8 @@ namespace Hackathon15
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
             check_for_and_init_date(); // calcs burn
+
+            button4_Click(monthCalendar1, null);
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -115,11 +118,21 @@ namespace Hackathon15
         private void button5_Click(object sender, EventArgs e)
         {
             // + 5 min button
+            int i = 0;
+
+            min_active[i] = (System.Convert.ToInt32(min_active[i]) + 5).ToString();
+
+            check_for_and_init_date();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             // - 5 min button
+            int i = 0;
+
+            min_active[i] = (System.Convert.ToInt32(min_active[i]) - 5).ToString();
+            
+            check_for_and_init_date();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -135,11 +148,30 @@ namespace Hackathon15
 
             i = dates.IndexOf(monthCalendar1.SelectionStart.ToShortDateString());
 
-            check_for_and_init_date();
-
             cal_in[i] = textBox1.Text;
             cal_burn[i] = textBox3.Text;
-            min_active[i] = textBox2.Text;        
+            min_active[i] = textBox2.Text;
+
+            check_for_and_init_date();   
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            // + 30 button
+            int i = 0;
+
+            min_active[i] = (System.Convert.ToInt32(min_active[i]) + 30).ToString();
+
+            check_for_and_init_date();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            int i = 0;
+
+            min_active[i] = (System.Convert.ToInt32(min_active[i]) - 30).ToString();
+
+            check_for_and_init_date();
         }
     }
 }
