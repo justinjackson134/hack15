@@ -72,5 +72,11 @@ namespace Hackathon15
         {
             // + 30 min button
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form3 f1 = new Form3(); // Instantiate a Form3 object.
+            f1.Show(); // Show Form3
+        }
     }
 }
