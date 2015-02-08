@@ -45,6 +45,8 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // monthCalendar1
@@ -135,7 +137,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(261, 125);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(311, 20);
+            this.textBox2.Size = new System.Drawing.Size(310, 20);
             this.textBox2.TabIndex = 10;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -154,15 +156,15 @@
             this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(261, 86);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(311, 20);
+            this.textBox3.Size = new System.Drawing.Size(310, 20);
             this.textBox3.TabIndex = 12;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(261, 152);
+            this.button5.Location = new System.Drawing.Point(261, 151);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(150, 23);
+            this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 13;
             this.button5.Text = "+5";
             this.button5.UseVisualStyleBackColor = true;
@@ -170,9 +172,9 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(422, 152);
+            this.button7.Location = new System.Drawing.Point(417, 151);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(150, 23);
+            this.button7.Size = new System.Drawing.Size(75, 23);
             this.button7.TabIndex = 15;
             this.button7.Text = "-5";
             this.button7.UseVisualStyleBackColor = true;
@@ -180,7 +182,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(422, 46);
+            this.textBox4.Location = new System.Drawing.Point(422, 47);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(106, 20);
             this.textBox4.TabIndex = 16;
@@ -205,11 +207,33 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(339, 151);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 19;
+            this.button8.Text = "+30";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(495, 151);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(77, 23);
+            this.button9.TabIndex = 20;
+            this.button9.Text = "-30";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 261);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox4);
@@ -229,7 +253,7 @@
             this.Controls.Add(this.monthCalendar1);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Fit Calc";
+            this.Text = "Fitness Calculator";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -255,5 +279,7 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
     }
 }
